@@ -1,0 +1,417 @@
+*{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    text-align: center;
+    background-image: url('../image/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+header h1 {
+    color: black;
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+
+h1{
+    color: white;
+}
+
+body{
+    background-color: #511C1C;
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.5;
+}
+
+section {
+    margin-bottom: 50px; 
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 20px;  
+}
+
+#Fastfood{
+     margin-top: 20px;
+}
+#logo{
+    height: auto;
+    width: 250px ;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+
+.pizza-img {
+    width: 345px;       
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+section p{
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#Pizzas{
+    color: white;
+    padding: 40px;
+}
+
+#pizza {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+.tipo-pizza {
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffd700;
+    border-bottom: 2px solid rgba(255,215,0,0.4);
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.lista-precios {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.lista-precios li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+.lista-precios li {
+    white-space: nowrap;
+    gap: 10px;
+    font-size: 1.05rem;
+}
+
+.precios {
+    display: inline-flex;
+    align-items: center;
+}
+
+.precio-efectivo {
+    color: #f5c542;
+     font-weight: 700;
+}
+
+.precio-tarjeta {
+    color: #e6edf7;
+    font-size: 0.85em;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px dashed rgba(255,255,255,0.4);
+}
+
+.lista-ingredientes {
+    color: #dce3ff;
+    padding-left: 0;
+    list-style: none;
+}
+
+.lista-ingredientes li {
+    margin-bottom: 5px;
+    white-space: normal;
+    gap: 10px;
+    font-size: 1.05rem;
+}
+
+.lista-ingredientes span{
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.contenedor{
+    background-color: #950C0C;
+    padding: 30px;
+    width: 345px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.contenedor p{
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+#Fastfood{
+    color: white;
+    padding: 40px; 
+}
+
+.contenedor h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.contenedor ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.contenedor li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+.contenedor ul ul{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.contenedor ul ul li{
+    justify-content: flex-start;
+    font-size: 0.95rem;
+    color: #dce3ff;
+}
+
+.domicilio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.domicilio img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#Pizzas,
+#Fastfood{
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    color: white;
+}
+
+#Pizzas > *,
+#Fastfood > *{
+    position: relative;
+    z-index: 2;
+}
+
+#Pizzas::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url('../image/Pizza.png') no-repeat center / contain;
+    top: 50%;
+    right: -80px;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+#Pizzas::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: url('../image/Soda.png') no-repeat center / contain;
+    bottom: 20px;
+    left: -40px;
+    opacity: 0.35;
+    z-index: 1;
+}
+
+#Fastfood::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: url('../image/Hamburguesa.png') no-repeat center / contain;
+    top: 40px;
+    left: -70px;
+    opacity: 0.55;
+    z-index: 1;
+}
+
+#Fastfood::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('../image/Pizza.png') no-repeat center / contain;
+    bottom: 30px;
+    right: 10%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.domicilio {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.domicilio.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+#Pizzas > *,
+#Fastfood > *{
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-anim {
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.scroll-anim.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.from-left {
+    transform: translateX(-40px);
+}
+
+.from-right {
+    transform: translateX(40px);
+}
+
+.from-bottom {
+    transform: translateY(70px);
+}
+
+
+.scroll-anim {
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.scroll-anim.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+.info {
+    transform: translateY(40px);
+    transition-delay: 0.15s;
+}
+
+.info.show {
+    transform: translateY(0);
+}
+
+
+/*----------------Reglas----------------*/
+
+
+
+@keyframes zoomLento {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.06);
+    }
+}
+
+@media (max-width: 600px) {
+
+    #Pizzas::before,
+    #Fastfood::before{
+        width: 280px;
+        height: 280px;
+        right: -50px;
+        top: 20px;
+        transform: none;
+    }
+
+    #Pizzas::after,
+    #Fastfood::after{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 600px) {
+    .info {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    #pizza {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .lista-precios li {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .info,
+    .contenedor {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #domicilio {
+        max-width: 90%;
+    }
+}
+

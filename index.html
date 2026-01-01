@@ -15,7 +15,7 @@
 
     <section>
         <img id="logo" src="image/Logo robin.png" alt="logo">
-        <p style="color: white;">Degusta los platillos que tenemos aqui en Robin pizza</p>
+        <h2 id="eslogan">Aquí no hay orillas, <span>solo pizza</span></h2>
     </section>
 
 
@@ -267,14 +267,6 @@
                     <span class="precio-tarjeta">$25.75</span>
                 </span>
             </li> 
-
-            <li>
-                Refresco 2L 
-                <span class="precios">
-                    <span class="precio-efectivo">$40</span>
-                    <span class="precio-tarjeta">$41.2</span>
-                </span>
-            </li>
         </div>
     </section>
 
@@ -297,7 +289,7 @@ const observer = new IntersectionObserver(entries => {
 
 elements.forEach(el => observer.observe(el));
 observer.observe(document.querySelector('.domicilio'));
+document.getElementById("eslogan").classList.add("show");
 </script>
 </body>
-
 </html>
